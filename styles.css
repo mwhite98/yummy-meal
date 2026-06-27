@@ -38,7 +38,7 @@ html, body, .wrapper {
 .wrapper {
   display: flex;
   background-color: var(--beige);
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 div.centre {
