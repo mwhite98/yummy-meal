@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>oooo yummy yummy yum m</title>
+  <link rel="icon" type="image/x-icon" href="/assets/carrot.gif">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="mobile-overlay">
+      no cooking on mobile!!!
+    </div>
+    <!-- recipe book -->
+    <section class="recipe-column">
+      <h2>recipes</h2>
+      <div class="scroller">
+        <!-- borscht -->
+        <div class="recipe" id="borscht">
+          <h3>baba's borscht</h3>
+          <ul>
+            <li>beet</li>
+            <li>carrot</li>
+            <li>dill</li>
+            <li>lemon juice</li>
+            <li>broth</li>
+          </ul>
+        </div>
+
+        <!-- 7 bean soup -->
+        <div class="recipe" id="bean soup">
+          <h3>mom's 7 bean soup</h3>
+          <ul>
+            <li>7 beans</li>
+            <li>onion</li>
+            <li>tomato</li>
+            <li>broth</li>
+          </ul>
+        </div>
+
+        <!-- noodles -->
+        <div class="recipe" id="noods">
+          <h3>late night noods</h3>
+          <ul>
+            <li>noodles</li>
+            <li>egg</li>
+            <li>pak choi</li>
+          </ul>
+        </div>
+
+        <!-- west coast latkes -->
+        <div class="recipe" id="latkes">
+          <h3>west coast latkes</h3>
+          <ul>
+            <li>potato</li>
+            <li>leek</li>
+            <li>egg</li>
+            <li>salmon</li>
+            <li>dill</li>
+          </ul>
+        </div>
+
+        <!-- pantry pasta -->
+        <div class="recipe" id="pasta">
+          <h3>pantry pasta</h3>
+          <ul>
+            <li>pasta</li>
+            <li>tomato</li>
+            <li>onion</li>
+            <li>carrot</li>
+            <li>cheese</li>
+          </ul>
+        </div>
+
+        <!-- fish bake -->
+        <div class="recipe" id="fish bake">
+          <h3>fish bake</h3>
+          <ul>
+            <li>pasta</li>
+            <li>salmon</li>
+            <li>tomato</li>
+            <li>leek</li>
+            <li>lemon</li>
+            <li>cheese</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+    <!-- stovetop -->
+    <main>
+      <!-- yum -->
+      <header>
+        <h1 id="yum" can-grow>YUM</h1>
+      </header>
+      <div class="kitchen-container">
+        <!-- pan -->
+        <section class="pan-container">
+          <div class="centre">
+            <img can-spin can-toggle src="assets/pan.png" alt="pan" id="pan" />
+          </div>
+        </section>
+
+        <!-- ingredients -->
+        <section class="ingredients-container">
+          <h2>ingredients</h2>
+          <img can-move src="assets/bean.png" alt="bean" class="bean" id="bean1" />
+          <img can-move src="assets/bean2.png" alt="bean" class="bean" id="bean2" />
+          <img can-move src="assets/bean.png" alt="bean" class="bean" id="bean3" />
+          <img can-move src="assets/bean2.png" alt="bean" class="bean" id="bean4" />
+          <img can-move src="assets/bean.png" alt="bean" class="bean" id="bean5" />
+          <img can-move src="assets/bean2.png" alt="bean" class="bean" id="bean6" />
+          <img can-move src="assets/bean.png" alt="bean" class="bean" id="bean7" />
+          <img can-move src="assets/beet.gif" alt="beet" id="beet" />
+          <img can-move src="assets/brof.png" alt="broth" id="broth" />
+          <img can-move src="assets/carrot.gif" alt="carrot" id="carrot" />
+          <img can-move src="assets/cheese.gif" alt="cheese" id="cheese" />
+          <img can-move src="assets/dill.png" alt="dill" id="dill" />
+          <img can-move src="assets/egg.gif" alt="egg" id="egg" />
+          <img can-move src="assets/leek.png" alt="leek" id="leek" />
+          <img can-move src="assets/lemon.gif" alt="lemon" id="lemon" />
+          <img can-move src="assets/noodle.png" alt="noodle" id="noodle" />
+          <img can-move src="assets/onion.gif" alt="onion" id="onion" />
+          <img can-move src="assets/pak choi.png" alt="pak choi" id="pak choi" />
+          <img can-move src="assets/penne.png" alt="penne" id="penne" />
+          <img can-move src="assets/potato.gif" alt="potato" id="potato" />
+          <img can-move src="assets/salmon.gif" alt="salmon" id="salmon" />
+          <img can-move src="assets/tomato.gif" alt="tomato" id="tomato" />
+          <!-- <img can-move src="assets/" alt="" id="" /> -->
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+  <script type="module">
+    import { playhtml } from "https://unpkg.com/playhtml@latest"
+    playhtml.init({
+      cursors: {
+        enabled: true,
+        room: "page"
+      }
+    })
+  </script>
+</body>
+
+</html>

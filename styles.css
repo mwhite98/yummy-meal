@@ -1,0 +1,182 @@
+:root {
+  --beige: #FFF4E8;
+  --green: #ABCC85;
+  --green-outline: #327330;
+  --pink: #F7D7E6;
+}
+
+@font-face {
+	font-family: Lard;
+	src: url('assets/fonts/KCLard.otf');
+}
+
+h1, #id {
+  margin: 0;
+
+  font-family: Lard;
+  font-size: 160px;
+  letter-spacing: 10px;
+  color: var(--green); 
+}
+
+h2 {
+  margin: 0;
+
+  font-family: Lard;
+  font-size: 50px;
+  letter-spacing: 5px;
+  color: var(--green); 
+}
+
+html, body, .wrapper {
+  height: 100%;
+  margin: 0;
+
+  cursor: url('assets/chef.gif'), auto;
+}
+
+.wrapper {
+  display: flex;
+  background-color: var(--beige);
+  overflow-y: hidden;
+}
+
+div.centre {
+  text-align: center;
+}
+
+@media only screen and (min-width: 524px) {
+  .mobile-overlay {
+    display: none;
+  }
+}
+
+.mobile-overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  padding-top: 100px;
+
+  background-color: var(--pink);
+  color: var(--green-outline);
+  font-family: Lard;
+  font-size: 100px;
+  text-align: center;
+}
+
+/* ===== recipes ===== */
+
+section.recipe-column {
+  width: 250px;
+
+  display: flex;
+  flex-direction: column;
+
+  margin: 40px;
+  padding: 10px;
+  border: 2px solid var(--pink);
+  border-radius: 20px;
+}
+
+section.recipe-column h2 {
+  text-align: center;
+}
+
+section.recipe-column .scroller {
+  flex-grow: 1;
+  overflow-y: scroll;
+}
+
+section.recipe-column .recipe {
+  margin: 10px 0;
+  padding: 10px;
+
+  border: 2px solid var(--pink);
+  border-radius: 20px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--green-outline)
+}
+
+section.recipe-column .recipe h3 {
+  text-align: center;
+  margin: 0;
+  padding-bottom: 3px;
+  border-bottom: 1px solid var(--green-outline);
+}
+
+section.recipe-column .recipe ul {
+  margin: 0;
+  margin-top: 10px;
+  list-style-position: inside;
+  padding-left: 10px;
+  list-style-type: "✧ ";
+}
+
+section.recipe-column .recipe ul li:nth-child(even) {
+  list-style-type: "✦ ";
+}
+
+/* ===== kitchen ===== */
+
+main {
+  flex-grow: 1;
+}
+
+header {
+  text-align: center;
+}
+
+div.kitchen-container {
+  display: flex;
+  justify-content: space-between;
+  /* height minus height of header */
+  height: calc(100% - 192px);
+}
+
+section.pan-container {
+  flex-grow: 1;
+}
+
+img#pan {
+  max-height: 770px;
+  transition: filter 0.3s ease;
+  cursor: url('assets/chef.gif'), auto !important;
+}
+
+img#pan.toggled {
+  filter: brightness(1.2) saturate(1.6) drop-shadow(0px 0px 50px rgba(255, 135, 87, 0.85));
+}
+
+/* Make text a lil smaller for iPads & smaller computer screens */
+@media only screen and (max-width: 1460px) {
+  img#pan {
+    max-height: 470px;
+  }
+}
+
+section.ingredients-container {
+  margin: 40px;
+  padding: 10px;
+  flex-basis: 25%;
+
+  border: 2px solid var(--pink);
+  border-radius: 20px;
+}
+
+section.ingredients-container h2 {
+  text-align: center;
+}
+
+section.ingredients-container img {
+  max-width: 100px;
+}
+
+section.ingredients-container img.bean {
+  max-width: 50px;
+}
+
+section.ingredients-container img#carrot, #tomato, #lemon {
+  min-width: 50px;
+}
